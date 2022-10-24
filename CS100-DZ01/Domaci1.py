@@ -1,0 +1,1 @@
+print('Hello, World! Moj broj indeksa je 5460')
