@@ -10,16 +10,19 @@
 n = int(input("Broj veci od 0 i manji od 10 -> "))
 outputStr = ""
 
-for x in range(n):
-    for y in range(n):
-        if x == 0 or x == n - 1: #Pitamo da li je prvi ili zadnji red, ako jeste popunjavamo ceo red sa x
-            outputStr = outputStr + "x"
-        else: # Ako je bilo koji drugi red ulazi u else
-            if y == 0 or y == n - 1: # Pitamo da li je kolona 1 ili zadnja kolona, ako jesu upisujemo x
+if n < 1 or n > 10:
+    print("Unesite ispravan broj!")
+else:
+    for x in range(n):
+        for y in range(n):
+            if x == 0 or x == n - 1: #Pitamo da li je prvi ili zadnji red, ako jeste popunjavamo ceo red sa x
                 outputStr = outputStr + "x"
-            else: # Ako nisu upisujemo razmak
-                outputStr = outputStr + " "
-        outputStr = outputStr + " "
-    outputStr = outputStr + "\n" # Posle svakog prolaza dodajemo novi red
+            else: # Ako je bilo koji drugi red ulazi u else
+                if y == 0 or y == n - 1: # Pitamo da li je kolona 1 ili zadnja kolona, ako jesu upisujemo x
+                    outputStr = outputStr + "x"
+                else: # Ako nisu upisujemo razmak
+                    outputStr = outputStr + " "
+            outputStr = outputStr + " "
+        outputStr = outputStr + "\n" # Posle svakog prolaza dodajemo novi red
 print(outputStr)
 
