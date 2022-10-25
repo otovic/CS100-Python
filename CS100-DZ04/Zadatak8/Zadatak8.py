@@ -1,8 +1,5 @@
 # Napisati program koji od korisnika zahteva da unosi brojeve. Kada korisnik unese nulu,
 # prekida se unos i program prikazuje maksimalni i minimalni broj od svih unetih.
-n = 1
-min = 100000
-max = 0
 
 n = int(input("Broj -> "))
 min = n
