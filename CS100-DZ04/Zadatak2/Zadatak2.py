@@ -8,8 +8,11 @@ n = int(input("Ceo broj manji od 20 -> "))
 
 outputStr = ""
 
-for x in range(1, n + 1):
-    for y in range(x):
-        outputStr = outputStr + str(x) + " "
+if n > 20 and n < 1:
+    print("Broj mora biti manji od 20 i veci od 0!")
+else:
+    for x in range(1, n + 1):
+        for y in range(x):
+            outputStr = outputStr + str(x) + " "
 
 print(outputStr)
