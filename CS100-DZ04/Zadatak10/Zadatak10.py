@@ -17,11 +17,10 @@ else:
         for y in range(n):
             if x == 0 or x == n - 1:
                 outputStr = outputStr + "x"
+            elif y == 0 or y == n - 1:
+                outputStr = outputStr + "x"      
             else: 
-                if y == 0 or y == n - 1: 
-                    outputStr = outputStr + "x"
-                else: 
-                    outputStr = outputStr + " "
+                outputStr = outputStr + " "
             outputStr = outputStr + " "
         outputStr = outputStr + "\n" 
 print(outputStr)
