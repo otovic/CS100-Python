@@ -15,14 +15,14 @@ if n < 1 or n > 10:
 else:
     for x in range(n):
         for y in range(n):
-            if x == 0 or x == n - 1: #Pitamo da li je prvi ili zadnji red, ako jeste popunjavamo ceo red sa x
+            if x == 0 or x == n - 1:
                 outputStr = outputStr + "x"
-            else: # Ako je bilo koji drugi red ulazi u else
-                if y == 0 or y == n - 1: # Pitamo da li je kolona 1 ili zadnja kolona, ako jesu upisujemo x
+            else: 
+                if y == 0 or y == n - 1: 
                     outputStr = outputStr + "x"
-                else: # Ako nisu upisujemo razmak
+                else: 
                     outputStr = outputStr + " "
             outputStr = outputStr + " "
-        outputStr = outputStr + "\n" # Posle svakog prolaza dodajemo novi red
+        outputStr = outputStr + "\n" 
 print(outputStr)
 
