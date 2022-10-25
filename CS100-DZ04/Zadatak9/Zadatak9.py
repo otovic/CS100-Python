@@ -10,7 +10,7 @@ while(condition):
     x = int(input("Broj -> "))
     if x < 0:
         negativeNumbers += 1
-    elif x > 0 and negativeNumbers != 0:
+    elif negativeNumbers != 0:
         condition = True if x > negativeNumbers else False
 
 print("Ukupan broj negativnih brojeva -> " + str(negativeNumbers))
