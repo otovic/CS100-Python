@@ -15,13 +15,8 @@ if n < 1 or n > 10:
 else:
     for x in range(n):
         for y in range(n):
-            if x == 0 or x == n - 1:
-                outputStr = outputStr + "x"
-            elif y == 0 or y == n - 1:
-                outputStr = outputStr + "x"      
-            else: 
-                outputStr = outputStr + " "
+            outputStr = outputStr + "x" if x == 0 or x == n - 1 or y == 0 or y == n - 1 else outputStr + " "
             outputStr = outputStr + " "
-        outputStr = outputStr + "\n" 
+        outputStr = outputStr + "\n"
 print(outputStr)
 
