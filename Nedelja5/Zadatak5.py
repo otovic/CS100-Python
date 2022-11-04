@@ -1,4 +1,6 @@
 def oipKvadrata(stranica):
-    return "Povrsina je -> " + str(stranica * stranica) + ", a obim je -> " + str(4 * stranica)
+    return str(stranica * stranica), str(4 * stranica)
+    
+p, o = oipKvadrata(5)
 
-print(oipKvadrata(5))
+print("Obim je -> " + o + ", Povrsina je -> " + p)
