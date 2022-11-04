@@ -11,7 +11,7 @@ while(condition):
     if x < 0:
         negativeNumbers += 1
     elif negativeNumbers != 0:
-        condition = True if x > negativeNumbers else False
+        condition = True if x >= negativeNumbers else False
 
 print("Ukupan broj negativnih brojeva -> " + str(negativeNumbers))
     
