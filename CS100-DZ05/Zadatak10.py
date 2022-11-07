@@ -16,7 +16,10 @@ def cezarovaSifra(text, pomeraj):
     cypher = ""
 
     for x in text.upper():
-        cypher += abc[abc.index(x) + pomeraj] if abc.index(x) + pomeraj <= 25 else abc[(abc.index(x) + pomeraj - 1) % 25]
+        if x in abc:
+            cypher += abc[abc.index(x) + pomeraj] if abc.index(x) + pomeraj <= 25 else abc[(abc.index(x) + pomeraj - 1) % 25]
+        else:
+            cypher += x
     
     print("Sifriran tekst -> " + cypher)
 
