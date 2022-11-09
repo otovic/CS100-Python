@@ -3,7 +3,7 @@
 # Prikazati sve redove teksta na standardnom izlazu. 
 # Ne koristiti kontekstni menadžer.
 
-file = open('text.txt', 'w+')
+file = open('text.txt', 'w')
 
 n = int(input("Broj redova koji se unose -> "))
 
