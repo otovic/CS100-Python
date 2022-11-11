@@ -4,7 +4,7 @@
 imeDatoteke = str(input("Unesite ime datoteke -> "))
 
 with open("copyfile.py", "rb") as rf:
-    with open(imeDatoteke + ".py", "wb") as wf:
+    with open(imeDatoteke, "wb") as wf:
         x = rf.read(1024)
         while len(x) > 0:
             wf.write(x)
