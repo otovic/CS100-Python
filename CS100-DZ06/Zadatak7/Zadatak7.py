@@ -1,11 +1,12 @@
 # Napisati program za pronalaženje najduže reči iz proizvoljne tekstualne datoteke. 
 # Ne koristiti kontekstni menadžer.
+putanja = str(input("Unesite putanju do datoteke (.txt format) -> "))
 
-fr = open("text.txt", "r")
+fr = open(putanja, "r")
 reci = fr.read()
 
 maxDuzina = 0 #najveca duzina reci
-najduzaRec = [] #u ovom nizu cuvam sve reci sa njavecom duzinom
+najduzaRec = [] #u ovom nizu cuvam sve reci sa najvecom duzinom
 trenutnaRec = ""
 trenutnaDuzina = 0
 
