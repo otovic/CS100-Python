@@ -22,4 +22,3 @@ with open("text.txt", "r") as f:
 
 for x in range(len(reci)):
     print(str(reci[x]) + " broj ponavljanja -> " + str(brojPonavljanja[x]) + "\n")
-f.close()
