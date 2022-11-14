@@ -15,6 +15,3 @@ else:
             while len(x) > 0:
                 wf.write(x)
                 x = rf.read(velBloka)
-
-rf.close()
-wf.close()
