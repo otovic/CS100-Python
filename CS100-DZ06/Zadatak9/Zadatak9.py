@@ -13,5 +13,3 @@ with open("text.txt", "r") as fr:
         with open("noviFajl.txt", "w") as fw:
             for x in range(n - 1, len(linije)):
                 fw.write(linije[x])
-            fw.close()
-fr.close()
