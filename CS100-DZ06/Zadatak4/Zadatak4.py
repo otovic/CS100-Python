@@ -14,8 +14,6 @@ with open("text.txt", "r") as f:
     for x in range(len(lines)):
         print(f"{x + 1}: " + lines[x].replace("\n", ''))
 
-f.close()
-
 print("Unesite zamene za reci u fajlu: \n")
 
 with open("text.txt", "w") as f:
@@ -24,8 +22,6 @@ with open("text.txt", "w") as f:
             f.write(str(input(f"{x + 1} rec za zamenu -> ")) + "\n")
         else:
             f.write(str(input(f"{x + 1} rec za zamenu -> ")))
-f.close()
 
 with open("text.txt", "r") as f:
     print("Novi fajl: \n" + f.read())
-f.close()
