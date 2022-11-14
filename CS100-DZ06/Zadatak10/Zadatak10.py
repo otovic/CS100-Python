@@ -9,5 +9,3 @@ with open("copyfile.py", "rb") as rf:
         while len(x) > 0:
             wf.write(x)
             x = rf.read(1024)
-rf.close()
-wf.close()
