@@ -8,18 +8,18 @@ brojevi = []
 
 while brojac < 5:
     try:
-        broj = input("Unesite broj -> ")
-        if "-" in broj:
-            broj = broj.replace("-", "")
-            if (any(not slovo.isdigit() for slovo in broj)) or int(broj) * -1 > -1:
-                raise Exception("Unesite ispravan broj!")
-            else:
-                brojac += 1
-                brojevi.append(int(broj) * -1)
-        else:
-            raise Exception("Unesite ispravan broj!")
+        broj = int(input("Unesite broj -> "))
+        # if "-" in broj:
+        #     broj = broj.replace("-", "")
+        #     if (any(not slovo.isdigit() for slovo in broj)) or int(broj) * -1 > -1:
+        #         raise Exception("Unesite ispravan broj!")
+        #     else:
+        #         brojac += 1
+        #         brojevi.append(int(broj) * -1)
+        # else:
+        #     raise Exception("Unesite ispravan broj!")
 
-    except Exception as error:
-        print(error)
+    except ValueError:
+        print("qwer")
 
 print("Najveci broj je -> " + str(max(brojevi)))
