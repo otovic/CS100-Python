@@ -15,7 +15,7 @@ def unosBroja():
         return broj
 
 def isProst(broj):
-    if any(broj % delilac == 0 and broj != delilac for delilac in range(2, broj + 1)):
+    if any(broj % delilac == 0 and broj != delilac for delilac in range(2, 10)):
         return "nije prost broj"
     else:
         return "Prost broj"
