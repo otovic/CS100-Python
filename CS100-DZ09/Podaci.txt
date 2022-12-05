@@ -1,0 +1,5 @@
+Medijana:1,2,19,9,9
+Crveni Krst:1,2,3,3,6
+Staro Groblje:3,7,32,7,1
+Palilula:5,4,7,1,1
+Kalac:7,2,8,9,8
