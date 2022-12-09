@@ -6,4 +6,5 @@ for word in pon:
     counts.setdefault(word, 0)
     counts[word] += 1
 
-print(counts)
+for c, o in counts.items():
+    print(str(c) + " " + str(o))
