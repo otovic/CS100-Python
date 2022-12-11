@@ -7,7 +7,7 @@ def generisiSB() -> str("v0b87n1ext"): #funkcija vraca jedan serijski broj
 
     for x in range(duzina):
         karakter = karakteri[random.randrange(0, len(karakteri))]
-        karakter.upper() if random.randrange(0, 2) == 0 else karakter.lower()
+        karakter = karakter.upper() if (random.randrange(0, 2)) == 1 else karakter
         serijski_broj += karakter
     
     return serijski_broj
