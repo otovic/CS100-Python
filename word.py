@@ -64,16 +64,16 @@
 # # Save the document
 # document.save('new_document.docx')
 
-from docx import Document
-from docx.shared import Inches
+# from docx import Document
+# from docx.shared import Inches
 
-# Create a new document
-document = Document()
-paragraph = document.add_paragraph()
-for x in range(50):
-    run = paragraph.add_run()
-    image = run.add_picture('instagram.png')
-    image.width = Inches(0.7)
-    image.height = Inches(0.4)
+# # Create a new document
+# document = Document()
+# paragraph = document.add_paragraph()
+# for x in range(50):
+#     run = paragraph.add_run()
+#     image = run.add_picture('instagram.png')
+#     image.width = Inches(0.7)
+#     image.height = Inches(0.4)
 
-document.save('testy.docx')
+# document.save('testy.docx')
