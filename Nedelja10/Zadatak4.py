@@ -1,4 +1,4 @@
-a = 'ovo je neki test da vidim da li ce da radi 123@#!#$324!$@41414@$($_@*)($&(#@$^*^#@%&'
+a = 'mama mama ima mama'
 
 pon = [x for x in a]
 counts = {}
