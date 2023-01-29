@@ -1,5 +1,5 @@
 from Nedelja1.zadatak import zadatak_nedelja1 as zn1
-from Nedelja2.zadatak import zadatak_nedelja2 as zn2
+from Nedelja2.zadatak import zadtak_nedelja2 as zn2
 from Nedelja3.zadatak import zadatak_nedelja3 as zn3
 from Nedelja4.zadatak import zadatak_nedelja4 as zn4
 from Nedelja5.zadatak import zadatak_nedelja5 as zn5
